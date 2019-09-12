@@ -1,33 +1,64 @@
-.App {
-  text-align: center;
+:root {
+  --box-shadow: 0 16px 32px 0 rgba(0,31,109,0.08);
+  --radius: 6px;
+  --border: 1px solid;
+  --global-color: 63, 81, 181;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -user-select: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1, h2, h3, h4, h5 {
+  color: #222;
+}
+
+body {
+  margin-top: 5%;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+form > div, button {
+  margin: 10px 10px !important;
+  min-width: 150px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiFormControl-root {
+  min-width: 220px !important;
+}
+
+.status-idle {
+  background-color: aquamarine;
+  padding: 6px;
+  border-radius: 4px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list > * {
+  background-color: rgb(230, 243, 255);
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: var(--radius)
+}
+
+code {
+  font-size: 12px;
 }
