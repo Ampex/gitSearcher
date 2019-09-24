@@ -12,7 +12,7 @@ class App extends Component {
     disabled: false,
     email: '',
     pass: '',
-    currentUser: false,
+    currentUser: null,
     error: false,
     isOpen: false,
     logged: false,
@@ -135,7 +135,7 @@ class App extends Component {
 
   render() {
 
-    const { email, pass, currentUser, error, disabled, isOpen, register, logged } = this.state
+    const { email, pass, currentUser, error, disabled, isOpen, logged } = this.state
 
     return (
       <div className="container">
@@ -307,13 +307,6 @@ class App extends Component {
       anchorOrigin={{vertical: 'bottom', horizontal: 'left'}}
       autoHideDuration={3500}
       onClose={()=> this.setState ({ isOpen: !isOpen })}
-      ></Snackbar>
-      <Snackbar
-      open={register}
-      message={<span>Register and Login successful</span>}
-      anchorOrigin={{vertical: 'bottom', horizontal: 'left'}}
-      autoHideDuration={3500}
-      onClose={()=> this.setState ({ register: !register })}
       ></Snackbar>
 
       </div>
