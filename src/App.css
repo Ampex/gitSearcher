@@ -22,11 +22,6 @@
   body {
     margin-top: 10% !important;
   }
-  .user {
-    text-align: center !important;
-    flex-wrap: wrap !important;
-    padding-right: 0px !important;
-  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -53,22 +48,7 @@ form {
 form > div, button {
   margin: 10px 10px !important;
 }
-.register {
-  min-width: 0 !important;
-}
-.user {
-  top: 0;
-}
-.user, .footer {
-  background-color: var(--footerBg);
-  width: 100%;
-  position: absolute;
-  right: 0;
-  padding: 5px;
-  padding-right: 20px;
-  text-align: right;
-  font-size: 14px;
-}
+
 .error {
   margin-top: 30px;
   background-color: #ffebf2;
@@ -84,19 +64,7 @@ form > div, button {
   50% { transform: translateX(30px)}
   100% { transform: translateX(0px)}
 }
-.footer {
-  text-align: center;
-  bottom: 0
-}
-.user-content {
-  justify-content: center;
-  align-content: center;
-}
 
 p {
   line-height: 0px
-}
-
-.MuiSnackbarContent-root {
-  background-color: green !important
 }
