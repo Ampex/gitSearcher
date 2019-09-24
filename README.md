@@ -1,4 +1,4 @@
-# DEMO: [DEMO](https://bkasperski.pl/loginRegister)
+# Live demo here: [DEMO](https://bkasperski.pl/loginRegister)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
