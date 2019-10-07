@@ -53,7 +53,6 @@ class App extends Component {
     sorted: [],
     isLoaded: false,
     isDisabled: false,
-    typingTimeout: 0
   }
 
   handleLoad = () => {
@@ -82,14 +81,13 @@ class App extends Component {
   // }
 
   handleChange = e => {
+    const { value, list } = this.state
+
     this.setState ({
       value: e.target.value,
-    })    
-  }
-
-  render() {
-    const { isDisabled, sorted, isLoaded } = this.state
-    const list = this.state.list.map(item => 
+    })
+    const sorted = list.filter(item => item.name.includes(value))
+    const sortedItems = sorted.map(item => 
       <Item
       key={item.id}
       name={item.name}
@@ -97,6 +95,23 @@ class App extends Component {
       tag={item.language}
       url={item.html_url}
       />)
+      
+    this.setState ({
+      sorted: sortedItems
+    })
+  }
+
+  render() {
+    const { isDisabled, isLoaded, sorted, value } = this.state
+
+    const list = this.state.list.map(item => 
+      <Item
+      key={item.id}
+      name={item.name}
+      description={item.description}
+      tag={item.language}
+      url={item.html_url}
+      />)      
 
     return (
       <div className="container">
@@ -119,10 +134,10 @@ class App extends Component {
             
           </Paper>
 
-          {list}
+          {value ? sorted : list}
 
         </ThemeProvider>
-      </div>
+      </div>      
     )
   }
 }
