@@ -1,4 +1,4 @@
-# Live demo here: [DEMO](https://bkasperski.pl/gitSearch)
+# Live demo here: [DEMO](https://bkasperski.pl/gitSearcher)
 
 ## Material UI for React
 ### Components:
