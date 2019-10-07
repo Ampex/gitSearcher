@@ -20,7 +20,10 @@
 
 @media only screen and (max-width: 600px) {
   body {
-    margin-top: 10% !important;
+    margin-top: 0 !important
+  }
+  h1 {
+    font-size: 32px !important;
   }
 }
 
