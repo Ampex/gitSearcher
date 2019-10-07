@@ -36,12 +36,20 @@ const Item = props => {
 
 const theme = createMuiTheme ({
 
+  overrides: {
+    MuiInputBase: {
+      input: {
+        textTransform: 'lowercase'
+      }
+    }
+  },
+
   palette: {
     primary: green,
     secondary: red
   },
   status: {
-    danger: 'green'
+    danger: 'yellow'
   },
 })
 
@@ -84,7 +92,7 @@ class App extends Component {
     const { value, list } = this.state
 
     this.setState ({
-      value: e.target.value,
+      value: e.target.value
     })
     const sorted = list.filter(item => item.name.includes(value))
     const sortedItems = sorted.map(item => 
