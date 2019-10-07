@@ -120,12 +120,12 @@ class App extends Component {
           <h1>Git Project Searcher</h1>
           
           <Paper>
-            <IconButton onClick={this.handleLoad} disabled={isDisabled} aria-label="menu"style={{margin:'0 5px'}}>
+            <IconButton onClick={this.handleLoad} disabled={isDisabled}aria-label="menu"style={{margin:'0 5px'}}>
               {isLoaded ? <CheckIcon color='primary' /> : <PublishIcon />}
               {isDisabled && <CircularProgress style={{position:'absolute'}} />}
             </IconButton>
             <InputBase
-            disabled={isDisabled}
+            disabled={isLoaded ? false : true}
             onChange={this.handleChange}
             type='text'
             value={this.state.value}
