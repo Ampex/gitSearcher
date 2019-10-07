@@ -129,7 +129,7 @@ class App extends Component {
             onChange={this.handleChange}
             type='text'
             value={this.state.value}
-            placeholder="Search for projects"
+            placeholder={isLoaded ? 'Search for projects' : 'Fetch for projects first'}
             />
             
           </Paper>
