@@ -1,12 +1,14 @@
-It is simply search bar for searching a interesting git projects.
+It is project for searching a interesting git projects.
 
-# Live demo here: [DEMO](https://bkasperski.pl/gitSearcher)
+# Live demo here: [DEMO](http://Ampex.github.io/gitSearcher)
 
 ## Material UI for React
+
 ### Components:
+
 - ThemeProvider
 - Icons
-- Colors 
+- Colors
 - Paper
 - InputBase
 
