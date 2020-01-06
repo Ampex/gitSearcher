@@ -37,6 +37,7 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.9.0",
+    "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "react-test-renderer": "^16.10.2"
   }

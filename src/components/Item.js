@@ -6,7 +6,7 @@ const Item = props => {
   return (
     <div className='item'>
       <Grow in>
-        <Paper>
+        <Paper elevation={0} variant='outlined'>
           <Link href={url}>
             <Typography style={{ padding: 15 }} variant='h5' component='h3'>
               {name}
@@ -14,7 +14,12 @@ const Item = props => {
           </Link>
           <Divider />
           <Typography
-            style={{ padding: '8px 15px', flexWrap: 'nowrap' }}
+            style={{
+              padding: '8px 15px',
+              flexWrap: 'nowrap',
+              display: 'flex',
+              alignItems: 'center'
+            }}
             component='p'
           >
             {description}

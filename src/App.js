@@ -6,7 +6,7 @@ import Repo from './repositories.json'
 import { red, green } from '@material-ui/core/colors'
 
 import Header from './components/Header'
-import Results from './components/Results'
+import LoadAndSearch from './components/LoadAndSearch'
 import Item from './components/Item'
 import Sorted from './components/Sorted'
 
@@ -48,16 +48,6 @@ class App extends Component {
     }
   }
 
-  // componentDidMount() {
-
-  //   fetch('./repositories.json')
-  //   .then(response => response.json())
-  //   .then(data => this.setState ({ list: data.items}))
-  //   this.setState ({
-  //     isLoaded: true
-  //   })
-  // }
-
   handleChange = e => {
     const { value, list } = this.state
 
@@ -97,7 +87,8 @@ class App extends Component {
       <div className='container'>
         <ThemeProvider theme={theme}>
           <Header />
-          <Results
+          <LoadAndSearch
+            value={value}
             handleLoad={this.handleLoad}
             isDisabled={isDisabled}
             isLoaded={isLoaded}
