@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gitSearcher/static/css/main.60f7fec8.chunk.css",
+    "main.js": "/gitSearcher/static/js/main.47767e68.chunk.js",
+    "main.js.map": "/gitSearcher/static/js/main.47767e68.chunk.js.map",
+    "runtime-main.js": "/gitSearcher/static/js/runtime-main.01a6cf6b.js",
+    "runtime-main.js.map": "/gitSearcher/static/js/runtime-main.01a6cf6b.js.map",
+    "static/js/2.c59639a2.chunk.js": "/gitSearcher/static/js/2.c59639a2.chunk.js",
+    "static/js/2.c59639a2.chunk.js.map": "/gitSearcher/static/js/2.c59639a2.chunk.js.map",
+    "index.html": "/gitSearcher/index.html",
+    "precache-manifest.8492a37f6855988432dd3213050ad415.js": "/gitSearcher/precache-manifest.8492a37f6855988432dd3213050ad415.js",
+    "service-worker.js": "/gitSearcher/service-worker.js",
+    "static/css/main.60f7fec8.chunk.css.map": "/gitSearcher/static/css/main.60f7fec8.chunk.css.map",
+    "static/js/2.c59639a2.chunk.js.LICENSE": "/gitSearcher/static/js/2.c59639a2.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01a6cf6b.js",
+    "static/js/2.c59639a2.chunk.js",
+    "static/css/main.60f7fec8.chunk.css",
+    "static/js/main.47767e68.chunk.js"
+  ]
+}
